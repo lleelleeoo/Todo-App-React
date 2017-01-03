@@ -9,4 +9,5 @@ deploy:
   file: "./bin/bundle.js"
   skip_cleanup: true
   on:
+    branch: master
     tags: true
