@@ -3,10 +3,10 @@ node_js:
   - "6"
 before_script:
   - npm install -g webpack
-script: webpack --progress
+script: webpack --config ./webpack/production.config.js --progress
 deploy:
   provider: releases
-  file: "./bundle.js"
+  file: "./bin/bundle.js"
   skip_cleanup: true
   on:
     tags: true

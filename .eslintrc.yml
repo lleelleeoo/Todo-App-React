@@ -1,0 +1,22 @@
+env:
+  browser: true
+extends: airbnb
+plugins:
+  - react
+  - jsx-a11y
+  - import
+rules:
+  indent:
+    - warn
+    - 4
+    - SwitchCase: 1
+  quotes:
+    - warn
+    - single
+  strict:
+    - warn
+    - safe
+  max-len:
+    - warn
+    - code: 80
+    - ignoreComments: true
