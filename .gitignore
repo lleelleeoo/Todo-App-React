@@ -1,3 +1,10 @@
+###Node###
+
+logs
+*.log
+node_modules
+
+
 ###Windows###
 
 Thumbs.db
