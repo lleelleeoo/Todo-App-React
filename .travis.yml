@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "6"
+before_script:
+  - npm install -g webpack
+script: webpack --config ./webpack/production.config.js --progress
+deploy:
+  provider: releases
+  file: "./bin/bundle.js"
+  skip_cleanup: true
+  on:
+    tags: true
